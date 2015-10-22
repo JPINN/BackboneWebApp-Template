@@ -8,12 +8,16 @@ require.config({
         parse       :   "lib/parse/parse",
         backbone    :   "lib/backbone/backbone",
         underscore  :   "lib/underscore/underscore",
-        text        :   "lib/text/text"
+        text        :   "lib/text/text",
     }
 });
 
 require([
-    "app/app"
-], function (App) {
-    App.initialize();
+    "router/router", "parse", "backbone"
+], function (AppRouter, Parse, Backbone) {
+    Parse.initialize(
+        "tXonU1MhumMT3Fo2yrI96jV0f75JA9EExsSn5jKO", "v35br82tT227BVVLRvHIPZfMbqm1wB6grabvxaMs"
+    );
+    window.appRouter = AppRouter;
+    Backbone.history.start();
 });
