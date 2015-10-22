@@ -4,8 +4,8 @@
 define([
     "backbone",
     "parse",
-    "view/rootView",
-    "view/newView",
+    "views/rootView",
+    "views/newView",
     //include all views that will be navigated too
 
 ], function (Backbone, Parse, RootView, NewView) {

@@ -8,7 +8,7 @@ require.config({
         parse       :   "lib/parse/parse",
         backbone    :   "lib/backbone/backbone",
         underscore  :   "lib/underscore/underscore",
-        text        :   "lib/text/text",
+        text        :   "lib/text/text"
     }
 });
 
